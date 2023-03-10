@@ -16,6 +16,7 @@ body{
     font-weight: lighter;
 }
 
+/* narbar */
 header{
     position: fixed;
     top:0;
@@ -47,14 +48,84 @@ nav{
     color: var(--color-medio);
     text-decoration: none;
 }
-
-/* .contenedor{
+/* cuerpo de la pagina  */
+.contenedor{
     background-color: aqua;
     width: 100%;
 }
 
 .cont-body{
     background-color: brown;
+    display: flex;
     width: 100%;
-} */
+}
+/* lado izquierdo de la pagina */
+.body-left{
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+}
 
+.body-left-img{
+    width: 100%;
+    height: auto;
+}
+
+.left-art{
+    width: 100%;
+    display: flex;
+}
+
+.title{
+    width: 50%;
+    color:var(--color-oscuro);
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+.note{
+    width: 50%;
+    justify-content: center;
+}
+
+.note p{
+    color: var(--color-medio);
+    margin-bottom: 100px;
+}
+
+.left-botton{
+    width: 250px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border:none;
+
+}
+
+/* Lado derecho de la pagina */
+.body-right{
+    background-color: beige;
+    width: 30%;
+    padding: 15px;
+}
+
+.title-right{
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.note-right{
+    background-color: var(--color-oscuro);
+    color: var(--white);
+    width: 100%;
+}
