@@ -1,0 +1,19 @@
+:root{
+    --orange: hsl(35, 77%, 62%);
+    --red: hsl(5, 85%, 63%);
+    --white: hsl(36, 100%, 99%);
+    --color-claro: hsl(233, 8%, 79%);
+    --color-medio: hsl(236, 13%, 42%);
+    --color-oscuro: hsl(240, 100%, 5%);
+}
+
+body{
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: brown;
+    
+}
