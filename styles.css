@@ -10,10 +10,51 @@
 body{
     background-color: var(--white);
     margin: 0;
-    padding: 0;
+    padding: 135px calc(100% - 95%) 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 header{
-    background-color: brown;
-    
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
 }
+
+nav{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 calc(100% - 95%);
+}
+
+.nav-menu{
+    margin-right: calc(100% - 95%);
+    display: flex;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 20px;
+    line-height: 50px;
+
+}
+
+.nav-link{
+    color: var(--color-medio);
+    text-decoration: none;
+}
+
+/* .contenedor{
+    background-color: aqua;
+    width: 100%;
+}
+
+.cont-body{
+    background-color: brown;
+    width: 100%;
+} */
+
