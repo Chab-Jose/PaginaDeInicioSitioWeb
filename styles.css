@@ -13,6 +13,7 @@ body{
     padding: 100px calc(100% - 90%) 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
+    overflow-y: auto;
 }
 
 /* narbar */
@@ -31,6 +32,13 @@ nav{
     align-items: center;
     padding:0 calc(100% - 90%);
 }
+.nav-toogle{
+    color: var(--color-medio);
+    background: none;
+    border: none;
+    font-size: 13px;
+    display: none;
+}
 
 .nav-menu{
     display: flex;
@@ -48,21 +56,27 @@ nav{
     color: var(--color-medio);
     text-decoration: none;
 }
+
+.nav-link:hover{
+    color: var(--red);
+}
 /* cuerpo de la pagina  */
 .contenedor{
     width: 100%;
+    height: 100vh;
 }
 
 .cont-body{
-    /* background-color: brown; */
+    background-color: brown;
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    height: 50%;
 }
 /* lado izquierdo de la pagina */
 .body-left{
-    width: 75%;
-    margin-right: 50px;
-    
+    width: 70%;
+    height: min-content;
 }
 
 .body-left-img{
@@ -78,7 +92,8 @@ nav{
 }
 
 .title{
-    width: 40%;
+    background-color: aqua;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,72 +103,79 @@ nav{
     margin-right: 30px;
 }
 
-
 .note{
     width: 60%;
     padding: 10px;
-    justify-content: center;
+    display:grid;
+    align-content: space-between;
+    background-color: blanchedalmond;
 }
 
 .note p{
     color: var(--color-medio);
-    margin-bottom: 40px;
+   
 }
 
 .left-botton{
-    width: 250px;
+    width: 200px;
     height: 30px;
     justify-content: center;
     align-items: center;
     background-color: var(--red);
     color: var(--white);
-    font-size: 20px;
-    font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
     border:none;
-
 }
 
+.left-botton:hover{
+    background-color: var(--color-oscuro);
+}
 /* Lado derecho de la pagina */
 .body-right{
     background-color: var(--color-oscuro);
     width: 25%;
+    display: grid;
+    grid-gap: 2px;
     padding:  0 10px;
     overflow: hidden;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, .3);
-
+}
+.note-right{
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .title-right{
     color: var(--orange);
     text-transform: uppercase;
     font-size: 25px;
-    font-weight: bold;
-    margin: 20px 0;
+    font-weight: bold;   
     
 }
 
-.note-right{
-    color: var(--white);
-    width: 100%;
-    height: calc(100% / 4);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-
-}
 
 .body-right div:nth-child(3){
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
 }
 
-.note-right h4{
+.note-right a{
     margin-bottom: 3px;
+    color: var(--white);
     font-size: 14px;
     font-weight: bolder;
+    text-decoration: none;
+}
+
+.note-right a:hover{
+   
+    color: var(--orange);
+    
 }
 
 .note-right p{
@@ -163,6 +185,7 @@ nav{
 /* el footer del sitio */
 
 .cont-foot{
+    background-color: aqua;
     width: 100%;
     margin: 10px 0;
     display: flex;
@@ -176,12 +199,12 @@ nav{
 }
 
 .note-foot{
-    display: inline-block;
+    display: block;
     line-height: 15px;
 }
 
 .img-foot{
-    width: 25%;
+    width: 80px;
     object-fit: contain;
     margin-right: 10px;
 }
@@ -193,9 +216,107 @@ nav{
 }
 
 .foot-h4 {
+    font-weight: bolder;
     color: var(--color-oscuro);
+    text-decoration: none;
+}
+
+.foot-h4:hover{
+    color: var(--red);
 }
 
 .foot-p{
     color: var(--color-claro);
+}
+/* medias querys */
+@media screen and (max-width:1023px) {
+    body{
+        font-size: 11px;
+    }
+    .title{
+        font-size: 20px;
+    }  
+    .note-right a{
+        font-size: 12;
+    }
+    .note-foot{
+        display: inline-block;
+        line-height: 8px;
+    }
+}
+
+@media screen and (max-width:778px) {
+    
+      
+    header{
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 30px;
+    }
+    .title{
+        background-color: aqua;
+        width: 450px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:var(--color-oscuro);
+        font-size: 25px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    .note{
+        width: 50%;
+        height: 200px;
+        padding: 10px;
+        display:grid;
+        align-content: space-between;
+        background-color: blanchedalmond;
+    }
+    
+    .note p{
+        color: var(--color-medio);
+       
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+    
+    body{
+        padding-top: 70px
+        
+    }
+    header{
+        height: 80px
+    }
+
+    .logo{
+        width: 40px;
+        margin: 10px;
+    }
+    .nav-toogle{
+        display: block;
+    }
+    
+    .nav-menu{
+        background-color: var(--white);
+        flex-direction: column;
+        position: fixed;
+        top: 18px;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        transition: left 0.5s;
+        font-size: 18px;
+        padding: 20px 30px ;
+    }
+
+    .nav-menu-visible{
+        left: 25%;
+    }
+    
 }

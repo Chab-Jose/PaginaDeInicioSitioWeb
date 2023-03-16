@@ -8,11 +8,17 @@
     <title>web site</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" class="logo"><img src="/PaginaDeInicioSitioWeb/images/logo.svg" alt=""></a>
+            <a href="#" ><img class="logo" src="/PaginaDeInicioSitioWeb/images/logo.svg" alt=""></a>
+            <button class="nav-toogle"><i class="fa-solid fa-bars"></i></button>
             <ul class="nav-menu">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">New</a></li>
@@ -41,15 +47,15 @@
             <div class="body-right">
                 <h2 class="title-right">New</h2>    
                 <div class="note-right">
-                    <h4>Hydrogen VS Electric Cars</h4>
+                    <a href="#">Hydrogen VS Electric Cars</a>
                     <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
                 </div>
                 <div class="note-right">
-                    <h4>The Downsides of AI Artistry</h4>
+                    <a href="#">The Downsides of AI Artistry</a>
                     <p>What are the possible adverse effects of on-demand AI image generation?</p>
                 </div>
                 <div class="note-right">
-                    <h4>Is VC Funding Drying Up?</h4>
+                    <a href="#">Is VC Funding Drying Up?</a>
                     <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
                 </div>
             </div>
@@ -59,7 +65,7 @@
                 <img class="img-foot" src="/PaginaDeInicioSitioWeb/images/image-retro-pcs.jpg" alt="">
                 <div class="note-foot">
                     <h2 class="foot-h2">01</h2>
-                    <h4 class="foot-h4">Reviving Retro PCs</h4>
+                    <a href="#" class="foot-h4">Reviving Retro PCs</a>
                     <p class="foot-p">What happens when old PCs are given modern upgrades?</p>
                 </div>
             </div>
@@ -67,7 +73,7 @@
                 <img class="img-foot" src="/PaginaDeInicioSitioWeb/images/image-top-laptops.jpg" alt="">
                 <div class="note-foot">
                     <h2 class="foot-h2">02</h2>
-                    <h4 class="foot-h4">Top 10 Laptops of 2022</h4>
+                    <a href="#" class="foot-h4">Top 10 Laptops of 2022</a>
                     <p class="foot-p">Our best picks for various needs and budgets.</p>
                 </div>
             </div>
@@ -75,11 +81,13 @@
                 <img class="img-foot" src="/PaginaDeInicioSitioWeb/images/image-gaming-growth.jpg" alt="">
                 <div class="note-foot">
                     <h2 class="foot-h2">03</h2>
-                    <h4 class="foot-h4" > The Growth of Gaming</h4>
+                    <a href="#" class="foot-h4" > The Growth of Gaming</a>
                     <p class="foot-p">How the pandemic has sparked fresh opportunities.</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
