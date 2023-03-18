@@ -1,4 +1,4 @@
-:root{
+:root {
     --orange: hsl(35, 77%, 62%);
     --red: hsl(5, 85%, 63%);
     --white: hsl(36, 100%, 99%);
@@ -7,32 +7,34 @@
     --color-oscuro: hsl(240, 100%, 5%);
 }
 
-body{
+body {
     background-color: var(--white);
     margin: 0 auto;
     padding: 100px calc(100% - 90%) 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     overflow-y: auto;
 }
 
 /* narbar */
-header{
+header {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
+    height: 80px;
 }
 
-nav{
+nav {
     background-color: var(--white);
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 calc(100% - 90%);
+    padding: 0 calc(100% - 90%);
 }
-.nav-toogle{
+
+.nav-toogle {
     color: var(--color-medio);
     background: none;
     border: none;
@@ -40,83 +42,81 @@ nav{
     display: none;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     list-style: none;
     margin-right: -10px;
 }
 
-.nav-item{
+.nav-item {
     margin: 15px;
     line-height: 30px;
 
 }
 
-.nav-link{
+.nav-link {
     color: var(--color-medio);
     text-decoration: none;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--red);
 }
+
 /* cuerpo de la pagina  */
-.contenedor{
+.contenedor {
     width: 100%;
-    height: 100vh;
 }
 
-.cont-body{
-    background-color: brown;
+.cont-body {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 50%;
 }
+
 /* lado izquierdo de la pagina */
-.body-left{
+.body-left {
     width: 70%;
     height: min-content;
 }
 
-.body-left-img{
+.body-left-img {
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.left-art{
+.left-art {
     width: 100%;
     height: 150px;
     display: flex;
 }
 
-.title{
-    background-color: aqua;
+.title {
     width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:var(--color-oscuro);
+    color: var(--color-oscuro);
     font-size: 25px;
     font-weight: bold;
     margin-right: 30px;
 }
 
-.note{
+.note {
     width: 60%;
     padding: 10px;
-    display:grid;
+    display: grid;
     align-content: space-between;
-    background-color: blanchedalmond;
 }
 
-.note p{
+.note p {
     color: var(--color-medio);
-   
+
 }
 
-.left-botton{
+.left-botton {
     width: 200px;
     height: 30px;
     justify-content: center;
@@ -126,23 +126,25 @@ nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
-    border:none;
+    border: none;
 }
 
-.left-botton:hover{
+.left-botton:hover {
     background-color: var(--color-oscuro);
 }
+
 /* Lado derecho de la pagina */
-.body-right{
+.body-right {
     background-color: var(--color-oscuro);
     width: 25%;
     display: grid;
-    grid-gap: 2px;
-    padding:  0 10px;
+    grid-gap: 5px;
+    padding: 0 10px;
     overflow: hidden;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, .3);
 }
-.note-right{
+
+.note-right {
     color: var(--white);
     width: 100%;
     display: flex;
@@ -150,21 +152,21 @@ nav{
     align-content: center;
 }
 
-.title-right{
+.title-right {
     color: var(--orange);
     text-transform: uppercase;
     font-size: 25px;
-    font-weight: bold;   
-    
+    font-weight: bold;
+
 }
 
 
-.body-right div:nth-child(3){
+.body-right div:nth-child(3) {
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
 }
 
-.note-right a{
+.note-right a {
     margin-bottom: 3px;
     color: var(--white);
     font-size: 14px;
@@ -172,20 +174,19 @@ nav{
     text-decoration: none;
 }
 
-.note-right a:hover{
-   
+.note-right a:hover {
+
     color: var(--orange);
-    
+
 }
 
-.note-right p{
+.note-right p {
     margin-top: 3px;
 }
 
 /* el footer del sitio */
 
-.cont-foot{
-    background-color: aqua;
+.cont-foot {
     width: 100%;
     margin: 10px 0;
     display: flex;
@@ -193,23 +194,23 @@ nav{
 
 }
 
-.item-foot{
+.item-foot {
     width: 32%;
     display: flex;
 }
 
-.note-foot{
+.note-foot {
     display: block;
     line-height: 15px;
 }
 
-.img-foot{
+.img-foot {
     width: 80px;
     object-fit: contain;
     margin-right: 10px;
 }
 
-.foot-h2{
+.foot-h2 {
     font-size: 25px;
     font-weight: bold;
     color: var(--color-claro);
@@ -221,88 +222,116 @@ nav{
     text-decoration: none;
 }
 
-.foot-h4:hover{
+.foot-h4:hover {
     color: var(--red);
 }
 
-.foot-p{
+.foot-p {
     color: var(--color-claro);
 }
+
 /* medias querys */
 @media screen and (max-width:1023px) {
-    body{
+    body {
         font-size: 11px;
     }
-    .title{
+    header{
+        height: 70px;
+    }
+    nav{
+        height: 70px;   
+    }
+    .title {
         font-size: 20px;
-    }  
-    .note-right a{
+    }
+
+    .note-right a {
         font-size: 12;
     }
-    .note-foot{
-        display: inline-block;
-        line-height: 8px;
-    }
+
 }
 
 @media screen and (max-width:778px) {
-    
-      
-    header{
-        position: fixed;
-        top:0;
-        left:0;
+
+
+    header {
         width: 100%;
-        height: 30px;
+        height: 60px;
     }
-    .title{
-        background-color: aqua;
-        width: 450px;
-        height: 250px;
+    nav{
+        height: 60px;
+    }
+
+    .body-left {
+        width: 70%;
+        height: min-content;
+    }
+    
+    
+    .left-art {
+        width: 100%;
+        height: fit-content;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        color:var(--color-oscuro);
-        font-size: 25px;
-        font-weight: bold;
-        margin-right: 10px;
     }
     
-    .note{
-        width: 50%;
-        height: 200px;
+    .title {
+        margin-right: 5px;
+        font-size: 20px;
+      
+    }
+    
+    .note {
+        width: 60%;
         padding: 10px;
-        display:grid;
-        align-content: space-between;
-        background-color: blanchedalmond;
     }
     
-    .note p{
-        color: var(--color-medio);
-       
+    .note p {
+        width: 90%;
+        padding: 10px;
     }
     
+    .left-botton {
+        width: 150px;
+    }
+
+    .cont-foot {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    
+    .item-foot {
+        width: 45%;
+        margin: 10px;
+    }
+    
+   
 }
 
-@media screen and (max-width:576px) {
-    
-    body{
-        padding-top: 70px
-        
-    }
-    header{
-        height: 80px
+@media screen and (max-width:600px) {
+
+    body {
+        padding-top: 50px
     }
 
-    .logo{
+    header {
+        height: 45px
+    }
+    .logo {
         width: 40px;
         margin: 10px;
     }
-    .nav-toogle{
+
+    .nav-toogle {
         display: block;
+        color: var(--color-medio);
     }
     
-    .nav-menu{
+    .nav-toogle:hover{
+        color: var(--orange);
+    }
+
+    .nav-menu {
         background-color: var(--white);
         flex-direction: column;
         position: fixed;
@@ -312,11 +341,90 @@ nav{
         height: 100%;
         transition: left 0.5s;
         font-size: 18px;
-        padding: 20px 30px ;
+        padding: 20px 30px;
     }
 
-    .nav-menu-visible{
+    .nav-menu-visible {
         left: 25%;
+        
     }
-    
+    .body-scroll{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .nav-menu-visible::before{
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .4);
+        width: 25%;
+        height: 100%;
+        
+    }
+
+    .cont-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* lado izquierdo de la pagina */
+    .body-left {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .body-left-img {
+        width: 100%;
+    }
+
+    .left-art {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title {
+        padding: 10px;
+        height: 100px;
+    }
+
+    .note {
+        width: 100%;
+        height: 120px;
+    }
+    .note p{
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Lado derecho de la pagina */
+    .body-right {
+        width: 100%;
+    }
+
+    .note-right {
+        height: 80px;
+    }
+
+    /* el footer del sitio */
+
+    .cont-foot {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .item-foot {
+        width: 100%;
+        display: flex;
+    }
+
 }
